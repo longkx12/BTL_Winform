@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EF33375-5444-4BA9-BF2E-31912EA7E50C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp7</RootNamespace>
+    <AssemblyName>WindowsFormsApp7</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQlyNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQlyNXB.Designer.cs">
+      <DependentUpon>FormQlyNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQlySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQlySach.Designer.cs">
+      <DependentUpon>FormQlySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCTHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCTHD.Designer.cs">
+      <DependentUpon>FrmCTHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKH.Designer.cs">
+      <DependentUpon>FrmKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQlyNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQlyNV.Designer.cs">
+      <DependentUpon>FrmQlyNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRp.Designer.cs">
+      <DependentUpon>FrmRp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmrpNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmrpNV.Designer.cs">
+      <DependentUpon>FrmrpNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSuaHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuaHD.Designer.cs">
+      <DependentUpon>FrmSuaHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThemHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThemHD.Designer.cs">
+      <DependentUpon>FrmThemHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RpHoaDon.cs">
+      <DependentUpon>RpHoaDon.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="rpNV.cs">
+      <DependentUpon>rpNV.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Settings.Designer.cs" />
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQlyNXB.resx">
+      <DependentUpon>FormQlyNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQlySach.resx">
+      <DependentUpon>FormQlySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCTHD.resx">
+      <DependentUpon>FrmCTHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKH.resx">
+      <DependentUpon>FrmKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQlyNV.resx">
+      <DependentUpon>FrmQlyNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRp.resx">
+      <DependentUpon>FrmRp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmrpNV.resx">
+      <DependentUpon>FrmrpNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuaHD.resx">
+      <DependentUpon>FrmSuaHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThemHD.resx">
+      <DependentUpon>FrmThemHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RpHoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RpHoaDon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpNV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpNV.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
